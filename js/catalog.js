@@ -62,6 +62,15 @@ function updateCounter() {
 function updateCartPreview() {
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
+  for (var i = 0; i < Cart.length; i++){
+
+  }
+
+  var cartContents = document.getElementById('cartContents');
+  var cartTag = document.createElement('p');
+  cartTag.textContent = Cart;
+  cartContents.appendChild(cartTag);
+  console.log('cart? ', cartTag);
 }
 
 // Set up the "submit" event listener on the form.
